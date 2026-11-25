@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="booking.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+
+            <nav class="navbar">
+                <a class="brand" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-flower3" viewBox="0 0 16 16">
+                        <path
+                            d="M11.424 8c.437-.052.811-.136 1.04-.268a2 2 0 0 0-2-3.464c-.229.132-.489.414-.752.767C9.886 4.63 10 4.264 10 4a2 2 0 1 0-4 0c0 .264.114.63.288 1.035-.263-.353-.523-.635-.752-.767a2 2 0 0 0-2 3.464c.229.132.603.216 1.04.268-.437.052-.811.136-1.04.268a2 2 0 1 0 2 3.464c.229-.132.489-.414.752-.767C6.114 11.37 6 11.736 6 12a2 2 0 1 0 4 0c0-.264-.114-.63-.288-1.035.263.353.523.635.752.767a2 2 0 1 0 2-3.464c-.229-.132-.603-.216-1.04-.268M9 4a2 2 0 0 1-.045.205q-.059.2-.183.484a13 13 0 0 1-.637 1.223L8 6.142l-.135-.23a13 13 0 0 1-.637-1.223 4 4 0 0 1-.183-.484A2 2 0 0 1 7 4a1 1 0 1 1 2 0M3.67 5.5a1 1 0 0 1 1.366-.366 2 2 0 0 1 .156.142q.142.15.326.4c.245.333.502.747.742 1.163l.13.232-.265.002a13 13 0 0 1-1.379-.06 4 4 0 0 1-.51-.083 2 2 0 0 1-.2-.064A1 1 0 0 1 3.67 5.5m1.366 5.366a1 1 0 0 1-1-1.732l.047-.02q.055-.02.153-.044.202-.048.51-.083a13 13 0 0 1 1.379-.06q.135 0 .266.002l-.131.232c-.24.416-.497.83-.742 1.163a4 4 0 0 1-.327.4 2 2 0 0 1-.155.142M9 12a1 1 0 0 1-2 0 2 2 0 0 1 .045-.206q.058-.198.183-.483c.166-.378.396-.808.637-1.223L8 9.858l.135.23c.241.415.47.845.637 1.223q.124.285.183.484A1.3 1.3 0 0 1 9 12m3.33-6.5a1 1 0 0 1-.366 1.366 2 2 0 0 1-.2.064q-.202.048-.51.083c-.412.045-.898.061-1.379.06q-.135 0-.266-.002l.131-.232c.24-.416.497-.83.742-1.163a4 4 0 0 1 .327-.4q.07-.074.114-.11l.041-.032a1 1 0 0 1 1.366.366m-1.366 5.366a2 2 0 0 1-.155-.141 4 4 0 0 1-.327-.4A13 13 0 0 1 9.74 9.16l-.13-.232.265-.002c.48-.001.967.015 1.379.06q.308.035.51.083.098.024.153.044l.048.02a1 1 0 1 1-1 1.732zM8 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
+                    </svg>
+                    GH Gateway
+                </a>
+
+                <ul class="nav-links">
+                    <li><a class="active" href="http://127.0.0.1:5500/index.html#">Home</a></li>
+                    <li><a href="http://127.0.0.1:5500/About.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+
+                <a class="contact-btn" href="./booking.html">Booking</a>
+            </nav>
+
+             
+
+        </header>
+        <section class="booking-section">
+    <header class="booking-header">
+      <h1>BOOK NOW</h1>
+      <p>DON'T STAND IN THE FOG. CLAIM YOUR SPOT</p>
+    </header>
+
+    <form class="booking-form">
+       
+      <div class="form-group">
+        <label for="party-size">Party size</label>
+        <div class="input-wrapper select-wrapper">
+          <select id="party-size" name="party-size">
+            <option value="1">1 guest</option>
+            <option value="2" selected>2 guests</option>
+            <option value="3">3 guests</option>
+            <option value="4">4 guests</option>
+            <option value="5">5 guests</option>
+            <option value="6">6+ guests</option>
+          </select>
+        </div>
+      </div>
+
+    
+      <div class="form-group">
+        <label for="booking-date">Date</label>
+        <div class="input-wrapper date-wrapper">
+          <input type="text" id="booking-date" name="booking-date" value="11/25/2026" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'">
+          <svg class="calendar-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="1" ry="1"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+          </svg>
+        </div>
+      </div>
+
+   
+      <div class="form-group">
+        <label for="booking-time">Time</label>
+        <div class="input-wrapper select-wrapper">
+          <select id="booking-time" name="booking-time">
+            <option value="12:00 PM">12:00 PM</option>
+            <option value="12:15 PM" selected>12:15 PM</option>
+            <option value="12:30 PM">12:30 PM</option>
+            <option value="12:45 PM">12:45 PM</option>
+            <option value="1:00 PM">1:00 PM</option>
+          </select>
+        </div>
+      </div>
+    </form>
+
+    <hr class="divider">
+  </section>
+    <section class="about-section">
+      <div class="about-grid">
+        <div class="about-info">
+          <h2 class="about-heading">GH Gateway</h2>
+          <p class="about-copy">
+             
+          </p>
+
+          <ul class="contact-list">
+            <li>
+              <span class="contact-icon" aria-hidden="true">&#128205;</span>
+              <span>500 Terry Francine St., San Francisco, CA<br>94158</span>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">&#128222;</span>
+              <a href="tel:1234567890">123-456-7890</a>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">&#9993;</span>
+              <a href="mailto:info@mysite.com">info@mysite.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="about-links-wrap">
+          <nav class="footer_nav" aria-label="Footer">
+            <div class="footer_group1">
+              <a class="footer3" href="#">Instagram</a>
+              <a class="footer4" href="#">Facebook</a>
+            </div>
+            <div class="footer_group2">
+              <a class="footer5" href="#">Privacy Policy &#8599;</a>
+              <a class="footer6" href="#">Accessibility Statement &#8599;</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="about-footer">
+    <footer class="footer">
+      <div class="footer_bottom">
+        <p class="footer_copyright">
+          &copy; 2035 by GH Getaway.<br>
+          Powered and secured by <a href="#">Wix</a>
+        </p>
+      </div>
+    </footer>
+  </section>
+</body>
+</html>
+</body>
+</html>
